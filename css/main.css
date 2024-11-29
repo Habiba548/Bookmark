@@ -1,0 +1,82 @@
+body{
+    background-color: #F7ECDE;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3,h4,h5,h6,p{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #fec260;
+    left: 0%;
+    z-index: -1;
+    transition: height 1s;
+}
+
+/* .section h1::before :hover{
+    height: 100%;
+} */
+
+hr {
+    border: none;
+    width: 100%;
+    border-top: 1px dotted black;
+  }
+
+  .fa-bookmark:before {
+    content: "\f02e";
+}
+
+
+.btn-submit{
+color: white;
+width: 15%;
+background-color: #BB4120;
+transition: background-color 0.2s;
+left: 40%;
+
+}
+
+.btn-submit:hover{
+    background-color: #a03315;
+    color: white;   
+}
+
+.btnVisit{
+    background-color: #afc932;
+    color: white;
+}
+.btnVisit:hover{
+    background-color: #8A9E23; 
+    color: white;
+}
+
+.btnDelete{
+    background-color: #e7142c;
+    color: white;
+}
+.btnDelete:hover{
+    background-color: #D30820;
+    color: white;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+<link rel="icon" href="./images.png">
+
+    <!-- ==========google font========== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <!-- ==========icon========== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- ==========bootstrap========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- ==========my css========== -->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+
+
+    <section class="container d-flex justify-content-center align-items-center flex-column">
+
+        <h1 class="py-5 position-relative "> Bookmarker</h1>
+
+        <hr/>
+
+
+        <div class="w-100 m-5 ">
+
+            <h2 class="fs-4 d-flex justify-content-center align-items-center "> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                    class="fa-solid fa-bookmark"></i> </h2>
+
+            <div class="mb-3">
+                <label for="BookmarkName" class="form-label"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" class="form-control" id="BookmarkName"  placeholder="Bookmark Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="WebsiteUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i>Site Url</label>
+                <input type="url" class="form-control"   id="WebsiteUrl" placeholder="Website Url">
+            </div>
+
+            <button class="btn btn-submit position-absolute " onclick="addBOOK()"> submit </button>
+        </div>
+
+        <hr/>
+
+        <!-- oninput="ValidateUrl()"
+         oninput="ValidateName()" -->
+
+        <div>
+
+            <table class="table text-center bg-leight mt-3 ">
+
+            <thead>
+
+                <tr >
+                    <th class="px-5 text-capitalize " >
+                        index
+                    </th>
+
+                    <th class="px-5 text-capitalize" >
+                    Website Name	
+                    </th>
+
+                    <th class="px-5 text-capitalize" >
+                    	Visit
+                    </th>
+
+                    <th class="px-5 text-capitalize" >
+                   	Delete
+                    </th>
+                </tr>
+
+            </thead>
+       
+            <hr/>
+     
+            <tbody id="bookData">
+             
+                
+            </tbody>
+
+
+            </table>
+            
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- ==========bootstrap ja========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- ==========my js========== -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
